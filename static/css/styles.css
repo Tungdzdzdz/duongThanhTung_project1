@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Book List Styles */
+.book-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-list li a {
+    font-size: 18px;
+}
+
+.book-list li .price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Book Detail Styles */
+.book-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-detail h1 {
+    margin-bottom: 20px;
+}
+
+.book-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Customer Forms Styles */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Cart Styles */
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container .remove-link {
+    color: #dc3545;
+}
+
+.cart-container .remove-link:hover {
+    text-decoration: underline;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}

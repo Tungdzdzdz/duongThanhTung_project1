@@ -1,0 +1,59 @@
+# Ignore the virtual environment directory
+venv/
+env/
+.venv/
+
+# Ignore the Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore the database file (SQLite)
+*.sqlite3
+
+# Ignore environment variables file
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore static files collected by Django (if not using version control for static files)
+staticfiles/
+
+# Ignore media files uploaded by users
+media/
+
+# Ignore pipenv/Pipfile lock
+Pipfile.lock
+
+# Ignore pip cache directory
+.pip-cache/
+
+# Ignore coverage reports
+.coverage
+htmlcov/
+
+# Ignore Celery beat schedule file
+celerybeat-schedule
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore PyCharm specific files
+.idea/
+*.iml
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore migrations (optional, only if you want to ignore them)
+migrations/

@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Welcome, {{ user.username }}!</h1>
+        <p>Email: {{ user.email }}</p>
+        <p>Phone: {{ user.phone_number }}</p>
+        <p>Address: {{ user.address }}</p>
+        <a href="{% url 'book_list' %}">Browse Books</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <ul>
+            {% for item in cart_items %}
+                <li>
+                    {{ item.book.title }} - ${{ item.book.price }} (Quantity: {{ item.quantity }})
+                    <a href="{% url 'remove_from_cart' item.id %}" class="remove-link">Remove</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'book_list' %}">Continue Shopping</a>
+    </div>
+</body>
+</html>
